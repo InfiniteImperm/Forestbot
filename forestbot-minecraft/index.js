@@ -104,6 +104,7 @@ bot.once('cmd_ready', () => { //initializing /commands directory
     bot.cmd.registerCommand('ping', require('./commands/pings.js'));
     bot.cmd.registerCommand('come', require('./commands/come.js'));
     bot.cmd.registerCommand('stop', require('./commands/fuckoff.js'));
+    bot.cmd.registerCommand('rr', require('./commands/rr.js'));
     bot.cmd.registerCommand('playtime', require('./commands/playtime.js'));
     bot.cmd.registerCommand('pt', require('./commands/playtime.js'));
     bot.cmd.registerCommand('commands', require('./commands/commandsCommand.js'));
