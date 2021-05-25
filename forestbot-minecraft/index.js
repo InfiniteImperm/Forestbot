@@ -39,7 +39,7 @@ const saveUserToDatabase = async (user) => { //checking if player exists in the 
 const afk = async () => { bot.setControlState('jump', true); await sleep(2000); bot.setControlState('jump', false); bot.lookAt(bot.entity.position.offset(0, -1, Math.floor(Math.random() * (-180 - 180 + 1)) + 180)); };
 const Activity = () => { client.user.setActivity(`Online: ${Object.keys(bot.players).length} | !help | forestbot.io`, { type: 'WATCHING' }); }; //Status for the discord bot
 function ad() {
-    let a = ["Im a bot. Beep Boop. Try some !commands", "Visit my website at https://forestbot.io", "bc1q895glkrrhaqns72ygkz2qwjpw9nqz3tz645wnx <-- Send BITCOIN here!", "I am the best bot in the world.", "No one can stop me.", "Im a bot."],
+    let a = ["I'm a bot. Beep Boop. Try some !commands", "Visit my website at https://forestbot.io", "bc1q895glkrrhaqns72ygkz2qwjpw9nqz3tz645wnx <-- Send BITCOIN here!", "I am the best bot in the world.", "No one can stop me.", "Im a bot."],
         r = a[Math.floor(Math.random() * a.length)]; bot.chat(r);
 }
 let embed = async (c, m) => { // Live chat bridge between minecraft server -> discord
